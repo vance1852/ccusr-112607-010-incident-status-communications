@@ -1,0 +1,15 @@
+{"at": 1, "kind": "probe", "source": "p1", "scope": "E/query", "result": "ready"}
+{"at": 2, "kind": "probe", "source": "p2", "scope": "E/intake", "result": "timed_out"}
+{"at": 3, "kind": "receipt", "site": "E", "capability": "intake", "customer": "uE", "request": "a", "stage": "accepted"}
+{"at": 4, "kind": "publish", "incident": "i1", "scope": ["E/intake", "W/intake"], "version": 1, "message": "investigating"}
+{"at": 5, "kind": "notice_delivery", "incident": "i1", "version": 1, "customer": "uE", "stage": "delivered"}
+{"at": 6, "kind": "probe", "source": "p2", "scope": "E/intake", "result": "new_accepted"}
+{"at": 7, "kind": "publish", "incident": "i1", "scope": ["E/intake"], "version": 2, "message": "recovered"}
+{"at": 8, "kind": "notice_delivery", "incident": "i1", "version": 2, "customer": "uE", "stage": "delivered"}
+{"at": 9, "kind": "change_subscription", "customer": "uW", "scopes": ["W/query"]}
+{"at": 10, "kind": "receipt", "site": "E", "capability": "intake", "customer": "uE", "request": "a", "stage": "pending_completion"}
+{"at": 11, "kind": "split", "original": "i1", "incident": "i2", "scope": ["W/intake"], "version": 1, "cause": "separate-outage"}
+{"at": 12, "kind": "publish", "incident": "i1", "scope": ["E/intake"], "version": 3, "message": "correction"}
+{"at": 13, "kind": "notice_delivery", "incident": "i1", "version": 2, "customer": "uAll", "stage": "accepted"}
+{"at": 14, "kind": "restart", "endpoint": "notifier"}
+{"at": 15, "kind": "notice_delivery", "incident": "i1", "version": 3, "customer": "uE", "stage": "delivered"}

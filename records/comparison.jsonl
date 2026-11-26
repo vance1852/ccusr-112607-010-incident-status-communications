@@ -1,0 +1,6 @@
+{"at": 1, "kind": "probe", "source": "p3", "scope": "W/query", "result": "ready"}
+{"at": 2, "kind": "publish", "incident": "early1", "scope": ["W/intake"], "version": 1, "message": "limited"}
+{"at": 3, "kind": "publish", "incident": "early2", "scope": ["E/intake"], "version": 1, "message": "limited"}
+{"at": 4, "kind": "notice_delivery", "incident": "early2", "version": 1, "customer": "uE", "stage": "delivered"}
+{"at": 5, "kind": "merge", "source": ["early1", "early2"], "incident": "main", "scope": ["E/intake", "W/intake"], "version": 1}
+{"at": 6, "kind": "receipt", "site": "W", "capability": "intake", "customer": "uAll", "request": "c", "stage": "completed"}

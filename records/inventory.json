@@ -1,0 +1,43 @@
+{
+  "services": {
+    "E/query": [
+      "lookup"
+    ],
+    "E/intake": [
+      "lookup",
+      "bridge"
+    ],
+    "W/query": [
+      "lookup-w"
+    ],
+    "W/intake": [
+      "lookup-w",
+      "bridge"
+    ]
+  },
+  "supports": {
+    "p1": [
+      "E/query"
+    ],
+    "p2": [
+      "E/intake"
+    ],
+    "p3": [
+      "W/query",
+      "W/intake"
+    ]
+  },
+  "audience": {
+    "uE": [
+      "E/intake",
+      "E/query"
+    ],
+    "uW": [
+      "W/intake"
+    ],
+    "uAll": [
+      "E/intake",
+      "W/intake"
+    ]
+  }
+}
